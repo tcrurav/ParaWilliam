@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Creación de factura</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list lines="full">
+    <form [formGroup]="facturaForm" (ngSubmit)="onSubmit()">
+      <ion-item>
+        <ion-label position="floating">CIF del proveedor:</ion-label>
+        <ion-input formControlName="valorCif" type="text" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Nombre del proveedor:</ion-label>
+        <ion-input formControlName="valorProveedor" type="text" required>
+        </ion-input>
+      </ion-item>
+      <ion-row>
+        <ion-col>
+          <ion-button type="submit" color="success" expand="block">Crear</ion-button>
+        </ion-col>
+      </ion-row>
+    </form>
+  </ion-list>
+</ion-content>
+
+<ion-back-button defaultHref="home" ></ion-back-button>

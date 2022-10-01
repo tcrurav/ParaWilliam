@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Modificación de facturas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>CIF del proveedor:</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Nombre del proveedor:</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+  </ion-list>
+  <p>Tenga en cuenta que para modificar el nombre del proveedor, deberá introducir un CIF válido.</p>
+
+  <ion-button color="warning" (click)="presentAlert()">Modificar factura</ion-button>
+
+  <ion-back-button defaultHref="home"></ion-back-button>
+</ion-content>

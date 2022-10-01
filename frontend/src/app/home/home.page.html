@@ -1,0 +1,27 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menú</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-menu-toggle>
+      <ion-button color="success" (click)="registrarFacturas()">Insertar factura</ion-button>
+      <ion-button color="primary" (click)="irMisFacturas()">Listar facturas</ion-button>
+      <ion-button color="warning" (click)="modificarFacturas()">Modificar factura</ion-button>
+      <ion-button color="danger" (click)="eliminarFacturas()">Eliminar factura</ion-button>
+    </ion-menu-toggle>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Aplicación de facturas</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-menu-toggle>
+      <ion-button color="dark">Abrir menú</ion-button>
+    </ion-menu-toggle>
+  </ion-content>
+</div>

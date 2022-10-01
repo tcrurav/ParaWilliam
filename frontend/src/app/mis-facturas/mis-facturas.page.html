@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Registro de facturas</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item *ngFor="let b of facturas">
+      <ion-label>
+        <h1>CIF: {{b.identificador}}</h1>
+        <p>Nombre fiscal: {{b.proveedor}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  
+  <ion-back-button defaultHref="home"></ion-back-button>
+
+</ion-content>
